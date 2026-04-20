@@ -110,7 +110,29 @@ El sistema está preparado para entornos de producción con:
 
 ## 📸 Capturas del sistema
 
-*(Agregar aquí imágenes o GIFs del sistema en funcionamiento)*
+### 🧭 Dashboard
+<img src="Dashboard.png" width="800">
+
+---
+
+### 🩺 Expediente Médico
+<img src="Expediente-1.png" width="800">
+<img src="Expediente-2.png" width="800">
+<img src="Expediente-3.png" width="800">
+<img src="Expediente-4.png" width="800">
+<img src="Expediente-5.png" width="800">
+
+---
+
+### 📅 Agenda Electrónica
+<img src="Agenda-1.png" width="800">
+
+---
+
+### 💳 Facturación Electrónica
+<img src="Facturacion-1.png" width="800">
+<img src="Facturacion-2.png" width="800">
+<img src="Facturacion-3.png" width="800">
 
 ---
 

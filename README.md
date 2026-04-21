@@ -26,7 +26,11 @@ En muchos centros médicos, la información se encuentra fragmentada entre múlt
 - Historial clínico estructurado
 - Registro de signos vitales y antecedentes
 - Manejo de documentos médicos (PDFs en nube/local)
-- Visualización avanzada con soporte de anotaciones
+- Visualización 3D interactiva de órganos con anotaciones
+- Odontograma digital tipo EDUS
+- Asociación automática de resultados de Biopsias en citas médicas
+- Integración de reportes médicos. 
+- Generación de información gráfica y estadística de pacientes para la planificación de servicios. 
 
 ### 📅 Agenda Electrónica
 - Calendario interactivo con múltiples vistas
@@ -41,6 +45,10 @@ En muchos centros médicos, la información se encuentra fragmentada entre múlt
 - Manejo de múltiples tipos de documentos
 - Cálculo automático de impuestos y descuentos
 - Control de pagos (efectivo, tarjeta, transferencias)
+- Módulo de control y gestión de activos fijos con cálculo de depreciación
+- Procesamiento automático de correos electrónicos de compras para extracción y registro de información
+- Generación de reportes fiscales (IVA y renta) y exportación de información contable en formatos compatibles (Excel) para uso contable
+- Módulo de gestión de alertas automáticas para el monitoreo de procesos incompletos, pendientes o fallidos
 
 ---
 
@@ -87,7 +95,7 @@ El sistema está diseñado bajo principios de:
 ## 🧠 Retos técnicos abordados
 
 - Consistencia entre datos clínicos y financieros
-- Integración con APIs externas (facturación electrónica)
+- Integración con APIs externas (MdH, BCCR, Registro Civil)
 - Manejo de procesos asíncronos y reintentos
 - Optimización de consultas SQL complejas
 - Diseño modular y escalable

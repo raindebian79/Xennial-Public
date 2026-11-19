@@ -60,6 +60,18 @@ En muchos centros médicos, la información se encuentra fragmentada entre múlt
 - Sistema de reintentos mediante colas si el servicio no responde
 - Registro de resultados para auditoría y mejora continua
 
+### 🎙️ Asistente de Voz por Telegram
+Bot de Telegram para consultar y operar Xennial con notas de voz o texto. Los modelos de IA corren en un servidor propio con GPU, sin enviar el audio ni los pedidos a servicios de IA externos.
+
+- Transcripción de voz a texto con Whisper (faster-whisper large-v3) acelerado por GPU
+- Interpretación de pedidos con un modelo de lenguaje local (Ollama) y salida en JSON estructurado; la IA solo extrae los datos, y las fechas, impuestos y totales los calcula el sistema
+- **Facturación por voz:** identifica al cliente por cédula o por nombre y los productos del catálogo con búsqueda tolerante a errores de transcripción; cuando hay ambigüedad pregunta con botones y nunca deja una factura incompleta
+- **Proformas:** cada pedido confirmado queda como proforma pendiente de revisión, con vigencia configurable, cuenta regresiva, renovación y alertas en el sistema. La emisión ante Hacienda es siempre manual desde el formulario de facturación
+- **Consultas:** historial de citas de un paciente, agenda del día, conteo de procedimientos por rango de fechas y catálogo de servicios con precios
+- **Multiclínica:** un mismo usuario puede trabajar con varias clínicas y elegir con cuál por voz o por comando
+- Transcripción de notas de voz en grupos de trabajo autorizados
+- **Seguridad:** lista blanca de usuarios, token independiente por clínica, límites de consultas y respuestas con datos mínimos, sin información clínica sensible
+
 ---
 
 ## 🧩 Arquitectura del Sistema
@@ -81,6 +93,8 @@ El sistema está diseñado bajo principios de:
 - **Componentes reactivos:** Livewire
 - **Base de datos:** MySQL / MariaDB
 - **Build Tools:** Vite
+- **IA local:** Python, faster-whisper (Whisper), Ollama
+- **Mensajería:** Telegram Bot API
 
 ### Librerías destacadas
 - spatie/laravel-permission
@@ -99,6 +113,8 @@ El sistema está diseñado bajo principios de:
 - Manejo de procesos asíncronos y reintentos
 - Optimización de consultas SQL complejas
 - Diseño modular y escalable
+- Ejecución de modelos de voz y lenguaje en infraestructura propia con GPU
+- Interpretación confiable de lenguaje natural: la IA describe el pedido y la lógica de negocio calcula y valida
 
 ---
 
